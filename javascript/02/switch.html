@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch in JS</title>
+</head>
+<body>
+    <h1>The use of switch statement</h1>
+</body>
+<script>
+    var fruitType = prompt("Which fruit you want?");
+    switch(fruitType){
+        case 'Orange':
+            console.log("40rs per kg");
+            break;
+        case 'Apple':
+            console.log("50rs per kg");
+            break;
+        case 'Lichi':
+            console.log("200rs per kg");
+            break;
+        default :
+            console.log(`We dont have ${fruitType} with us`);
+            break;
+    }
+    console.log("Is there something else you want?");
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            color: aliceblue;
+        } */
+        body{
+            background:#044356;
+        }
+        #main-heading{
+            color: aliceblue;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container{
+            background:#044356;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            gap: 50px;
+            margin: 50px;
+            height: 300px;
+        }
+        .boxes{
+            background:#044356;
+            border: 3px white solid;
+            border-radius: 8px;
+            font-size: x-large;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+        /* button{
+            margin-left: 40px;
+            margin-right: 40px;
+        } */
+        .hidden-content{
+            display: none;
+        }
+        .hidden-content.btn-reveal{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+
+    <div class="container">
+        <button class="btn-reveal boxes">Reveal More</button>
+
+        <!-- it has class boxes  -->
+        <div class="hidden-content boxes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repellat soluta sit voluptatum, numquam nobis odio eius voluptates non aliquid necessitatibus vero blanditiis repudiandae cumque. Illum expedita maxime delectus, maiores, necessitatibus, soluta deserunt eveniet explicabo neque impedit harum id optio. Dolor asperiores autem praesentium exercitationem, assumenda dolorem. Ullam eos recusandae saepe tenetur magnam suscipit, quam numquam corrupti qui repellat totam! Molestias consectetur reiciendis exercitationem reprehenderit labore esse? Voluptates, magni! Suscipit ut modi alias beatae qui officiis aperiam consequuntur. Praesentium fugit laborum est possimus hic voluptates quaerat! Cum voluptatem, hic aut, dignissimos illo accusamus, inventore quam officia provident ea non. Repudiandae?</div>
+    </div>
+    <script src="eventListener2.js"></script>
+</body>
+</html>

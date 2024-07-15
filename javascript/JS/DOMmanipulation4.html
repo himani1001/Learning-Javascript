@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+
+        /* make this responsive also */
+        body{
+            background:#044356;
+        }
+        #sports{
+            border: 5px white solid;
+            border-radius: 10px;
+            color: aliceblue;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            grid-auto-rows: minmax(100px, auto);
+            margin: 100px 630px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            font-size: large;
+            font-weight: 1000;
+            text-align: center;
+            border: 1px white solid;
+            padding: 15px;
+            margin: 15px 25px 15px 0px;
+        } 
+    </style>
+</head>
+<body>
+
+
+
+    <!-- instead of attaching the event listeners directly to each of the list items here we can delegate the listening to the parent which is the ul here which has the id of sports so when the li is clicked the listener of the parent element catches the bubbling event and performs our task which change the color of our background to light gray when we clicked on the boxes  -->
+    <ul id="sports">
+        <li id="football">Football</li>
+        <li id="basketball">Basketball</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennis">Tennis</li>
+        <li id="golf">Golf</li>
+    </ul>
+
+    <script src="eventDelegation.js"></script>
+</body>
+</html>

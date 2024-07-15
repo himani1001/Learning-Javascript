@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class = 'container'>
+        <h1 id="main-heading"> Favourite Book Series</h1>
+        <ul>                                                   <!--  h1 and ul are what we called siblings because they are on same level so we are going to use this ul and traverse upwards in the dom and find out what the parent of the ul is and also the grandparent-->
+            <li class="list-item">
+                <span>The</span>
+                Percy Jackson</li>
+            <li class="list-item">Harry Potter</li>
+            <li class="list-item">The Dark Verse</li>
+            <li class="list-item">Legacy Of Gods</li>
+            <li class="list-item">The Bridge Kingdom</li>
+        </ul>
+    </div>  
+    <!-- <div class = 'container'>
+        <h1 id="main-heading"> Favourite Book Series</h1>
+        <ul>
+            <li class="list-item">Percy Jackson</li>
+            <li class="list-item">Harry Potter</li>
+            <li class="list-item">The Dark Verse</li>
+            <li class="list-item">Legacy Of Gods</li>
+            <li class="list-item">The Bridge Kingdom</li>
+        </ul>
+    </div> -->
+    <script src="selectingElement.js"></script>
+    <script src="stylingElement.js"></script>
+    <script src="creatingElement.js"></script>
+    <script src="traversing.js"></script>
+</body>
+</html>
